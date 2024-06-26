@@ -1,0 +1,8 @@
+dynamic threshold based on average of plus minus 5 channels around this channel 
+odd and even channels separately
+
+
+ios::in	Open for input operations.
+ios::out	Open for output operations.
+
+ios::app	All output operations are performed at the end of the file, appending the content to the current content of the file.
