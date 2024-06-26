@@ -133,6 +133,20 @@ void write_results(TString filename_str, vector<int> brk_ch) {
   myfile.close();
 }
 
+template <typename T> T calculate_median(std::vector<T> v, size_t n) {
+  // Sort the vector
+  std::sort(v.begin(), v.end());
+
+  // Check if the number of elements is odd
+  if (n % 2 != 0) {
+    return (double)v[n / 2];
+  }
+
+  // If the number of elements is even, return the average
+  // of the two middle elements
+  return (double)(v[(n - 1) / 2] + v[n / 2]) / 2.0;
+}
+
 // ------------------------ Main function ---------------------
 
 int analysis_conn_check() {
@@ -179,6 +193,14 @@ int analysis_conn_check() {
         "h1_ave_residuals_even", "h1_ave_residuals_even", 100, -100000, 100000);
     TH1F *h1_ave_residuals_odd = new TH1F(
         "h1_ave_residuals_odd", "h1_ave_residuals_odd", 100, -100000, 100000);
+    // histograms storing threshold values for each channel, even and odd
+    // separately
+    TH1F *h1_thr_even = new TH1F("h1_thr_even", "h1_thr_even", 128, 0, 128);
+    TH1F *h1_thr_odd = new TH1F("h1_thr_odd", "h1_thr_odd", 128, 0, 128);
+
+    // histograms storing median values based on the neighboring channels
+    TH1F *h1_med_even = new TH1F("h1_med_even", "h1_med_even", 128, 0, 128);
+    TH1F *h1_med_odd = new TH1F("h1_med_odd", "h1_med_odd", 128, 0, 128);
 
     // ---------------------------------------------- Histograms name
     // ----------------------------------------------------
@@ -188,6 +210,12 @@ int analysis_conn_check() {
     h1_ave_odd->SetTitle("Noise counts; Number of noise hits; Entries");
     h2hits_amp->SetTitle(
         "Noise counts distribution; Channel number; ADC value");
+    h1_thr_even->SetTitle("Threshold vs channel; Channel number; Threshold");
+    h1_thr_odd->SetTitle("Threshold vs channel; Channel number; Threshold");
+    h1_med_even->SetTitle(
+        "Median of neighbors vs channel; Channel number; Median of neighbors");
+    h1_med_odd->SetTitle(
+        "Median of neighbors vs channel; Channel number; Median of neighbors");
 
     int ch_hits[128] = {0};
     float ave_even = 0.;
@@ -241,15 +269,13 @@ int analysis_conn_check() {
     //   ch_cnt_odd = 1;
     // ave_odd = ave_odd / ch_cnt_odd;
 
-
-
     // Last iteration to discriminate broken channels
-    z_alpha = 0.5;
+    z_alpha = 0.55;
     // number of channels in the neighborhood for dynamic threshold
     int n_neigh_ch = 10;
     // averages of neigh_even, neigh_odd vectors (averaged over neighboring
     // channels)
-    float neigh_ave_even, neigh_ave_odd;
+    float neigh_med_even, neigh_med_odd;
     // dynamic thresholds for even and odd channels based on the neighborhood
     float thr_even, thr_odd;
 
@@ -268,16 +294,17 @@ int analysis_conn_check() {
         for (int i = start_ch; i < end_ch; i++) {
           // Loop through neighboring channels to the left and right of the
           // current channel
-          if (i != ch)
+          if (i != ch) {
 
             neigh_even.push_back(ch_hits[i]);
+          }
         }
 
-        // calculate the local average of neighboring channels
-        neigh_ave_even =
-            std::accumulate(neigh_even.begin(), neigh_even.end(), 0.0) /
-            neigh_even.size();
-        float thr_even = z_alpha * neigh_ave_even;
+        // calculate the median of neighboring channels
+        neigh_med_even = calculate_median(neigh_even, neigh_even.size());
+        h1_med_even->Fill(ch, neigh_med_even);
+        thr_even = z_alpha * neigh_med_even;
+        h1_thr_even->Fill(ch, thr_even);
 
         if (ch_hits[ch] < thr_even) {
           // if the channel is broken based on the dynamic threshold
@@ -293,16 +320,17 @@ int analysis_conn_check() {
         for (int i = start_ch; i < end_ch; i++) {
           // Loop through neighboring channels to the left and right of the
           // current channel
-          if (i != ch)
+          if (i != ch) {
 
             neigh_odd.push_back(ch_hits[i]);
+          }
         }
 
-        // calculate the local average of neighboring channels
-        neigh_ave_odd =
-            std::accumulate(neigh_odd.begin(), neigh_odd.end(), 0.0) /
-            neigh_odd.size();
-        float thr_odd = z_alpha * neigh_ave_odd;
+        // calculate the median of neighboring channels
+        neigh_med_odd = calculate_median(neigh_odd, neigh_odd.size());
+        h1_med_odd->Fill(ch, neigh_med_odd);
+        thr_odd = z_alpha * neigh_med_odd;
+        h1_thr_odd->Fill(ch, thr_odd);
 
         if (ch_hits[ch] < thr_odd) {
           // if the channel is broken based on the dynamic threshold
@@ -310,8 +338,9 @@ int analysis_conn_check() {
           broken_channels.push_back(ch);
         }
 
-      } else
+      } else {
         continue;
+      }
     }
 
     // Fitting a 9th-order polynomial to the data
@@ -402,73 +431,101 @@ int analysis_conn_check() {
       }
     }
 
-    TF1 *f_ave_even = new TF1("f_ave_even", "[0]", 0, 128);
-    f_ave_even->SetParameter(0, ave_even);
-    TF1 *f_thr_even = new TF1("f_thr_even", "[0]", 0, 128);
-    f_thr_even->SetParameter(0, thr_even);
+    // TF1 *f_ave_even = new TF1("f_ave_even", "[0]", 0, 128);
+    // f_ave_even->SetParameter(0, neigh_med_even);
+    // TF1 *f_thr_even = new TF1("f_thr_even", "[0]", 0, 128);
+    // f_thr_even->SetParameter(0, thr_even);
 
-    TF1 *f_ave_odd = new TF1("f_ave_odd", "[0]", 0, 128);
-    f_ave_odd->SetParameter(0, ave_odd);
-    TF1 *f_thr_odd = new TF1("f_thr_odd", "[0]", 0, 128);
-    f_thr_odd->SetParameter(0, thr_odd);
+    // TF1 *f_ave_odd = new TF1("f_ave_odd", "[0]", 0, 128);
+    // f_ave_odd->SetParameter(0, neigh_med_odd);
+    // TF1 *f_thr_odd = new TF1("f_thr_odd", "[0]", 0, 128);
+    // f_thr_odd->SetParameter(0, thr_odd);
 
     TCanvas *c1 = new TCanvas("c1", "c1", 900, 600);
+
     c1->SetGrid();
     h_ave_hits->Draw("HIST");
     // h_ave_hits->Fit("pol9", "W", "same");
     // h_ave_hits->GetFunction("pol9")->SetLineColor(kOrange);
     h_ave_hits->SetLineColor(kAzure - 3);
-    h_ave_hits->GetYaxis()->SetRangeUser(0, 2.5 * ave_even);
+    h_ave_hits->GetYaxis()->SetRangeUser(
+        0, 1.5 * h_ave_hits->GetMaximum()); // 1.5 * ave_even
     // Adding broken channels
     h_broken_ch->Draw("PHISTSAME");
     h_broken_ch->SetMarkerSize(1.5);
     h_broken_ch->SetMarkerStyle(23);
     h_broken_ch->SetMarkerColor(kBlack);
+
     // h_broken_ch_residuals->Draw("PHISTSAME");
     // h_broken_ch_residuals->SetMarkerSize(2.5);
     // h_broken_ch_residuals->SetMarkerStyle(32);
     // h_broken_ch_residuals->SetMarkerColor(kBlack);
 
-    // Adding average and thr lines for visualization
-    f_ave_even->Draw("same");
-    f_ave_even->SetLineWidth(2);
-    f_ave_even->SetLineStyle(7);
-    f_ave_even->SetLineColor(kGreen + 2);
-    f_thr_even->Draw("same");
-    f_thr_even->SetLineWidth(2);
-    f_thr_even->SetLineStyle(1);
-    f_thr_even->SetLineColor(kGreen + 2);
+    /* f_ave_even->Draw("same");
+     f_ave_even->SetLineWidth(2);
+     f_ave_even->SetLineStyle(7);
+     f_ave_even->SetLineColor(kGreen + 2);
+     f_thr_even->Draw("same");
+     f_thr_even->SetLineWidth(2);
+     f_thr_even->SetLineStyle(1);
+     f_thr_even->SetLineColor(kGreen + 2); */
 
-    f_ave_odd->Draw("same");
-    f_ave_odd->SetLineWidth(2);
-    f_ave_odd->SetLineStyle(7);
-    f_ave_odd->SetLineColor(kMagenta);
-    f_thr_odd->Draw("same");
-    f_thr_odd->SetLineWidth(2);
-    f_thr_odd->SetLineStyle(1);
-    f_thr_odd->SetLineColor(kMagenta + 2);
+    h1_med_even->Draw("][HIST PMC SAME");
+    h1_med_even->SetLineStyle(7);
+    h1_med_even->SetLineColor(kGreen + 2);
 
-    TLegend *lg_brk_summ = new TLegend(0.50, 0.60, 0.85, 0.90);
+    h1_thr_even->Draw("][HIST PMC SAME");
+    h1_thr_even->SetLineStyle(1);
+    h1_thr_even->SetLineColor(kGreen + 2);
+
+    h1_med_odd->Draw("][HIST PMC SAME");
+    h1_med_odd->SetLineStyle(7);
+    h1_med_odd->SetLineColor(kMagenta);
+
+    h1_thr_odd->Draw("][HIST PMC SAME");
+    h1_thr_odd->SetLineStyle(1);
+    h1_thr_odd->SetLineColor(kMagenta + 2);
+
+    /*    f_ave_odd->Draw("same");
+        f_ave_odd->SetLineWidth(2);
+        f_ave_odd->SetLineStyle(7);
+        f_ave_odd->SetLineColor(kMagenta);
+        f_thr_odd->Draw("same");
+        f_thr_odd->SetLineWidth(2);
+        f_thr_odd->SetLineStyle(1);
+        f_thr_odd->SetLineColor(kMagenta + 2);*/
+
+    TLegend *lg_brk_summ = new TLegend(0.60, 0.60, 0.90, 0.90, "", "nbNDC");
     lg_brk_summ->SetHeader("Connectivity check");
     lg_brk_summ->AddEntry(h_ave_hits, "Noise hits", "l");
-    lg_brk_summ->AddEntry(h_broken_ch, "broken ch", "p");
+    lg_brk_summ->AddEntry(h_broken_ch, "broken channels", "p");
     // lg_brk_summ->AddEntry(h_broken_ch_residuals,"broken ch v2","p");
-    lg_brk_summ->AddEntry(f_ave_even, "Average counts even channels", "l");
-    lg_brk_summ->AddEntry(f_ave_odd, "Average counts odd channels", "l");
-    lg_brk_summ->AddEntry(f_thr_even, "Thr broken even channels", "l");
-    lg_brk_summ->AddEntry(f_thr_odd, "Thr broken odd channels", "l");
+    // lg_brk_summ->AddEntry(f_ave_even, "Average counts even channels", "l");
+    lg_brk_summ->AddEntry(h1_med_even, "Median of neighboring even channels",
+                          "l");
+
+    // lg_brk_summ->AddEntry(f_ave_odd, "Average counts odd channels", "l");
+    lg_brk_summ->AddEntry(h1_med_odd, "Median of neighboring odd channels",
+                          "l");
+
+    // lg_brk_summ->AddEntry(f_thr_even, "Thr broken even channels", "l");
+    lg_brk_summ->AddEntry(h1_thr_even, "Threshold broken even channels", "l");
+
+    // lg_brk_summ->AddEntry(f_thr_odd, "Thr broken odd channels", "l");
+    lg_brk_summ->AddEntry(h1_thr_odd, "Threshold broken odd channels", "l");
+
     // lg_brk_summ->AddEntry(h_ave_hits->GetFunction("pol9"),"Polynomial
     // fitting","l");
     lg_brk_summ->SetBorderSize(0);
     lg_brk_summ->SetFillColor(0);
     lg_brk_summ->Draw("");
-
     c1->Write();
     c1->Close();
 
     // h2hits_amp->Draw("COLZ");
     // h_ave_hits->Draw("HIST");
     //  Writing histograms to file
+    gStyle->SetOptStat();
     h2hits_amp->Write();
     h_ave_hits->Write();
     h1_ave_even->Write();
@@ -479,6 +536,12 @@ int analysis_conn_check() {
     h_ave_even->Write();
     h_ave_odd->Write();
     h_broken_ch_residuals->Write();
+    // add median histograms and threshold histograms
+    h1_med_even->Write();
+    h1_med_odd->Write();
+    h1_thr_even->Write();
+    h1_thr_odd->Write();
+
     file1->Close();
 
     // Writing summary file
