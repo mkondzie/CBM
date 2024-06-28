@@ -11,6 +11,7 @@
 #include <TLatex.h>
 #include <TLegend.h>
 #include <TPad.h>
+#include <TPaveStats.h>
 #include <TProfile.h>
 #include <TROOT.h>
 #include <TStyle.h>
@@ -36,6 +37,10 @@ int vcnt[128][32];
 // averages channel in the neighborhood for dynamic threshold
 std::vector<float> neigh_even;
 std::vector<float> neigh_odd;
+// problematic or suspicious channels based on the vicinity of a dynamic
+// threshold
+std::vector<float> sus_even;
+std::vector<float> sus_odd;
 
 void Analysis() {
   // ............... oooo00000oooo........................
@@ -273,11 +278,17 @@ int analysis_conn_check() {
     z_alpha = 0.55;
     // number of channels in the neighborhood for dynamic threshold
     int n_neigh_ch = 10;
+    // percentage of threshold for determining suspicious channels
+    float sus_perc = 0.05;
     // averages of neigh_even, neigh_odd vectors (averaged over neighboring
     // channels)
     float neigh_med_even, neigh_med_odd;
     // dynamic thresholds for even and odd channels based on the neighborhood
     float thr_even, thr_odd;
+
+    // calculate the total of weights in a projection
+    //  auto h2_sum_weights = h2hits_amp->ProjectionY()->Integral();
+    // calculate the
 
     for (int ch = 0; ch < 128; ch++) {
       // loop over all the channels
@@ -287,6 +298,9 @@ int analysis_conn_check() {
       // the channel may not have enough neighbors to the left or right
       int start_ch = std::max(0, ch - n_neigh_ch);
       int end_ch = std::min(128, ch + n_neigh_ch + 1);
+
+      //  TH2F *h2hits_amp =
+      //       new TH2F("h2hits_amp", "h2hits_amp", 128, 0, 128, 31, 1, 31);
 
       if (ch % 2 == 0) {
         // if the channel is even
@@ -310,6 +324,11 @@ int analysis_conn_check() {
           // if the channel is broken based on the dynamic threshold
 
           broken_channels.push_back(ch);
+
+        } else if (std::abs(ch_hits[ch] - thr_even) < thr_even * sus_perc) {
+
+          // if the channel is suspicious based on the vicinity of threshold
+          sus_even.push_back(ch_hits[ch]);
         }
 
       }
@@ -336,6 +355,10 @@ int analysis_conn_check() {
           // if the channel is broken based on the dynamic threshold
 
           broken_channels.push_back(ch);
+        } else if (std::abs(ch_hits[ch] - thr_odd) < thr_odd * sus_perc) {
+          // if the channel is suspicious based on the vicinity of threshold
+
+          sus_odd.push_back(ch_hits[ch]);
         }
 
       } else {
@@ -445,6 +468,9 @@ int analysis_conn_check() {
 
     c1->SetGrid();
     h_ave_hits->Draw("HIST");
+    h_ave_hits->SetStats(0);
+    h_ave_hits->GetYaxis()->SetTitleOffset(1.2);
+    h_ave_hits->GetYaxis()->SetNdivisions(505, 4);
     // h_ave_hits->Fit("pol9", "W", "same");
     // h_ave_hits->GetFunction("pol9")->SetLineColor(kOrange);
     h_ave_hits->SetLineColor(kAzure - 3);
@@ -469,22 +495,30 @@ int analysis_conn_check() {
      f_thr_even->SetLineWidth(2);
      f_thr_even->SetLineStyle(1);
      f_thr_even->SetLineColor(kGreen + 2); */
+    h1_med_even->Draw("PHISTSAME");
+    h1_med_even->SetBinError(0, 1e-6);
+    // h1_med_even->SetLineStyle(7);
+    h1_med_even->SetLineWidth(0);
+    h1_med_even->SetMarkerStyle(kFullCircle);
+    h1_med_even->SetMarkerColor(kGreen + 2);
 
-    h1_med_even->Draw("][HIST PMC SAME");
-    h1_med_even->SetLineStyle(7);
-    h1_med_even->SetLineColor(kGreen + 2);
+    h1_thr_even->Draw("PHIST SAME");
+    // h1_thr_even->SetLineStyle(1);
+    h1_thr_even->SetLineWidth(0);
+    h1_thr_even->SetMarkerStyle(kFullDotLarge);
+    h1_thr_even->SetMarkerColor(kGreen + 2);
 
-    h1_thr_even->Draw("][HIST PMC SAME");
-    h1_thr_even->SetLineStyle(1);
-    h1_thr_even->SetLineColor(kGreen + 2);
+    h1_med_odd->Draw("PHIST SAME");
+    // h1_med_odd->SetLineStyle(7);
+    h1_med_odd->SetLineWidth(0);
+    h1_med_odd->SetMarkerStyle(kFullCircle);
+    h1_med_odd->SetMarkerColor(kMagenta);
 
-    h1_med_odd->Draw("][HIST PMC SAME");
-    h1_med_odd->SetLineStyle(7);
-    h1_med_odd->SetLineColor(kMagenta);
-
-    h1_thr_odd->Draw("][HIST PMC SAME");
-    h1_thr_odd->SetLineStyle(1);
-    h1_thr_odd->SetLineColor(kMagenta + 2);
+    h1_thr_odd->Draw("PHIST   SAME");
+    // h1_thr_odd->SetLineStyle(1);
+    h1_thr_odd->SetLineWidth(0);
+    h1_thr_odd->SetMarkerStyle(kFullDotLarge);
+    h1_thr_odd->SetMarkerColor(kMagenta + 2);
 
     /*    f_ave_odd->Draw("same");
         f_ave_odd->SetLineWidth(2);
@@ -495,24 +529,26 @@ int analysis_conn_check() {
         f_thr_odd->SetLineStyle(1);
         f_thr_odd->SetLineColor(kMagenta + 2);*/
 
-    TLegend *lg_brk_summ = new TLegend(0.60, 0.60, 0.90, 0.90, "", "nbNDC");
+    TLegend *lg_brk_summ = new TLegend(0.60, 0.60, 0.90, 0.895, "", "nbNDC");
     lg_brk_summ->SetHeader("Connectivity check");
     lg_brk_summ->AddEntry(h_ave_hits, "Noise hits", "l");
-    lg_brk_summ->AddEntry(h_broken_ch, "broken channels", "p");
+    lg_brk_summ->AddEntry(h_broken_ch, "Broken channels", "p");
     // lg_brk_summ->AddEntry(h_broken_ch_residuals,"broken ch v2","p");
     // lg_brk_summ->AddEntry(f_ave_even, "Average counts even channels", "l");
     lg_brk_summ->AddEntry(h1_med_even, "Median of neighboring even channels",
-                          "l");
+                          "p"); //"l"
 
     // lg_brk_summ->AddEntry(f_ave_odd, "Average counts odd channels", "l");
     lg_brk_summ->AddEntry(h1_med_odd, "Median of neighboring odd channels",
-                          "l");
+                          "p"); //"l"
 
     // lg_brk_summ->AddEntry(f_thr_even, "Thr broken even channels", "l");
-    lg_brk_summ->AddEntry(h1_thr_even, "Threshold broken even channels", "l");
+    lg_brk_summ->AddEntry(h1_thr_even, "Threshold broken even channels",
+                          "p"); //"l"
 
     // lg_brk_summ->AddEntry(f_thr_odd, "Thr broken odd channels", "l");
-    lg_brk_summ->AddEntry(h1_thr_odd, "Threshold broken odd channels", "l");
+    lg_brk_summ->AddEntry(h1_thr_odd, "Threshold broken odd channels",
+                          "p"); //"l"
 
     // lg_brk_summ->AddEntry(h_ave_hits->GetFunction("pol9"),"Polynomial
     // fitting","l");

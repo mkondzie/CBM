@@ -6,3 +6,22 @@ ios::in	Open for input operations.
 ios::out	Open for output operations.
 
 ios::app	All output operations are performed at the end of the file, appending the content to the current content of the file.
+
+
+
+threshold: window +/- 5 % positive (if it includes positve then also the negative)
+average / max amplitude 
+
+suspicious almost above threshold
+
+ADC in th2d 
+projection of Y axis sum over bins take weighted average or median
+
+add a condition for problematic channels
+
+Do a scan to determine the optimal conditions for putting the threshold
+number of broken channels vs neighboring channels (to put a threshold)
+neighboring channels vs threshold in % in th2d
+
+
+criteria separate for each channel based on weighted average
