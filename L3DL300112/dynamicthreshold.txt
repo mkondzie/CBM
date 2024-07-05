@@ -25,3 +25,29 @@ neighboring channels vs threshold in % in th2d
 
 
 criteria separate for each channel based on weighted average
+
+
+webp extension:
+url includes .png remove the rest of the link (resize argument converts to .webp)photo 
+
+
+h2hits_amp->GetNbinsX()
+
+ch: 72 sus_even: 2.03374
+ch: 98 sus_even: 2.16638
+
+Filename_selected: conn_check_240109_0954_XA-000-08-001-064-051-048-13_HW_2_SET_56_17_102_35_NL_5_holes
+
+ch: 24 sus_even: 1.49147
+ch: 114 sus_even: 1.67738
+
+__________
+ch: 72 sus_even: 2.03374
+median of weighted av: 2.06946
+thr_even_sus: 1.1382
+__________
+ch: 98 sus_even: 2.16638
+median of weighted av: 2.10388
+thr_even_sus: 1.15713
+
+

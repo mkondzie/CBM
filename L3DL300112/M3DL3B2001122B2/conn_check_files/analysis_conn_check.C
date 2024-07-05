@@ -37,10 +37,10 @@ int vcnt[128][32];
 // averages channel in the neighborhood for dynamic threshold
 std::vector<float> neigh_even;
 std::vector<float> neigh_odd;
-// problematic or suspicious channels based on the vicinity of a dynamic
-// threshold
-std::vector<float> sus_even;
-std::vector<float> sus_odd;
+// weighted average based on Y projection of problematic or suspicious channels
+// based on the vicinity of a dynamic threshold
+std::vector<Double_t> sus_even;
+std::vector<Double_t> sus_odd;
 
 void Analysis() {
   // ............... oooo00000oooo........................
@@ -69,14 +69,14 @@ void Analysis() {
     if (!line.empty()) {
       iss >> ele;
       iss >> ele;
-      cout << " ch " << ch_cnt << " ";
+      // cout << " ch " << ch_cnt << " ";
       count = 0;
       for (int d = d_min; d < d_max + 1; d++) {
         iss >> count;
         vcnt[ch_cnt][d] = count;
-        printf("%4d ", vcnt[ch_cnt][d]);
+        // printf("%4d ", vcnt[ch_cnt][d]);
       }
-      cout << endl;
+      // cout << endl;
       ch_cnt++;
     }
   }
@@ -152,6 +152,25 @@ template <typename T> T calculate_median(std::vector<T> v, size_t n) {
   return (double)(v[(n - 1) / 2] + v[n / 2]) / 2.0;
 }
 
+Double_t calculate_weighted_av_ch(int ch, TH2F *h2) {
+
+  // histogram for keeping Y projection of h2hits_amp for this channel
+  TH1D *py_h2hits_amp = h2->ProjectionY("py_h2hits_amp", ch, ch, "");
+  // get the total sum of weights ing the Y projection
+  Double_t sum_of_weights_py_h2hits = py_h2hits_amp->Integral();
+  // initialize the weighted average sum of amplitude for this channel
+  Double_t sum_average_amp = 0.0;
+
+  for (Int_t n_bin = 1; n_bin < py_h2hits_amp->GetNbinsX(); n_bin++) {
+    Double_t weight_py_h2hits = py_h2hits_amp->GetBinContent(n_bin);
+    Double_t adc_value = py_h2hits_amp->GetXaxis()->GetBinLowEdge(n_bin);
+    sum_average_amp += weight_py_h2hits * adc_value;
+  }
+  Double_t weighted_av_ch = sum_average_amp / sum_of_weights_py_h2hits;
+  delete py_h2hits_amp;
+  return weighted_av_ch;
+}
+
 // ------------------------ Main function ---------------------
 
 int analysis_conn_check() {
@@ -206,6 +225,9 @@ int analysis_conn_check() {
     // histograms storing median values based on the neighboring channels
     TH1F *h1_med_even = new TH1F("h1_med_even", "h1_med_even", 128, 0, 128);
     TH1F *h1_med_odd = new TH1F("h1_med_odd", "h1_med_odd", 128, 0, 128);
+
+    // histogram storing suspicious channels
+    TH1F *h_sus_ch = new TH1F("h_sus_ch", "h_sus_ch", 128, 0, 128);
 
     // ---------------------------------------------- Histograms name
     // ----------------------------------------------------
@@ -280,6 +302,9 @@ int analysis_conn_check() {
     int n_neigh_ch = 10;
     // percentage of threshold for determining suspicious channels
     float sus_perc = 0.05;
+    // percentage of accepted deviation from weighted average of neighbors for
+    // of suspicious channels
+    float sus_neigh_perc = 0.2;
     // averages of neigh_even, neigh_odd vectors (averaged over neighboring
     // channels)
     float neigh_med_even, neigh_med_odd;
@@ -295,6 +320,30 @@ int analysis_conn_check() {
       neigh_even.clear();
       // erase the neighbors of the previous channel
       neigh_odd.clear();
+
+      // erase the weighted sums of surroundings of the previous channel
+      sus_even.clear();
+      sus_odd.clear();
+
+      /*
+            // histogram for keeping Y projection of h2hits_amp for this channel
+            TH1D *py_h2hits_amp =
+                h2hits_amp->ProjectionY("py_h2hits_amp", ch, ch, "");
+            // get the total sum of weights ing the Y projection
+            Double_t sum_of_weights_py_h2hits = py_h2hits_amp->Integral();
+            // initialize the weighted average sum of amplitude for this channel
+            Double_t sum_average_amp = 0.0;
+
+            for (Int_t n_bin = 1; n_bin < py_h2hits_amp->GetNbinsX(); n_bin++) {
+              Double_t weight_py_h2hits = py_h2hits_amp->GetBinContent(n_bin);
+              Double_t adc_value =
+         py_h2hits_amp->GetXaxis()->GetBinLowEdge(n_bin); sum_average_amp +=
+         weight_py_h2hits * adc_value;
+            }
+            Double_t weighted_av_ch = sum_average_amp /
+         sum_of_weights_py_h2hits;
+      */
+
       // the channel may not have enough neighbors to the left or right
       int start_ch = std::max(0, ch - n_neigh_ch);
       int end_ch = std::min(128, ch + n_neigh_ch + 1);
@@ -311,6 +360,8 @@ int analysis_conn_check() {
           if (i != ch) {
 
             neigh_even.push_back(ch_hits[i]);
+            // add weighted sum of ADC in neighboring channels
+            sus_even.push_back(calculate_weighted_av_ch(i, h2hits_amp));
           }
         }
 
@@ -328,7 +379,29 @@ int analysis_conn_check() {
         } else if (std::abs(ch_hits[ch] - thr_even) < thr_even * sus_perc) {
 
           // if the channel is suspicious based on the vicinity of threshold
-          sus_even.push_back(ch_hits[ch]);
+          // sus_even.push_back(ch_hits[ch]);
+          // criteria separate for each channel
+
+          // sus_even.push_back(calculate_weighted_av_ch(ch, h2hits_amp));
+          std::cout << "__________" << std::endl;
+          std::cout << "ch: " << ch
+                    << " sus_even: " << calculate_weighted_av_ch(ch, h2hits_amp)
+                    << std::endl;
+          std::cout << "median of weighted av: "
+                    << calculate_median(sus_even, sus_even.size()) << std::endl;
+
+          // float thr_even_sus =
+          //     z_alpha * calculate_median(sus_even, sus_even.size());
+          // std::cout << "thr_even_sus: " << thr_even_sus << std::endl;
+
+          if (std::abs(calculate_weighted_av_ch(ch, h2hits_amp) -
+                       calculate_median(sus_even, sus_even.size())) >
+              calculate_median(sus_even, sus_even.size()) * sus_neigh_perc) {
+            // if the median of ADC weighted sum in neighboring channels if
+            // significantly different than for the suspicious channel
+            broken_channels.push_back(ch);
+            std::cout << "is broken" << std::endl;
+          }
         }
 
       }
@@ -342,6 +415,7 @@ int analysis_conn_check() {
           if (i != ch) {
 
             neigh_odd.push_back(ch_hits[i]);
+            sus_odd.push_back(calculate_weighted_av_ch(i, h2hits_amp));
           }
         }
 
@@ -358,13 +432,41 @@ int analysis_conn_check() {
         } else if (std::abs(ch_hits[ch] - thr_odd) < thr_odd * sus_perc) {
           // if the channel is suspicious based on the vicinity of threshold
 
-          sus_odd.push_back(ch_hits[ch]);
-        }
+          // sus_odd.push_back(ch_hits[ch]);
 
-      } else {
-        continue;
+          // if the channel is suspicious based on the vicinity of threshold
+          // sus_even.push_back(ch_hits[ch]);
+          // criteria separate for each channel
+
+          // sus_odd.push_back(calculate_weighted_av_ch(ch, h2hits_amp));
+
+          std::cout << "__________" << std::endl;
+          std::cout << "ch: " << ch
+                    << " sus_odd: " << calculate_weighted_av_ch(ch, h2hits_amp)
+                    << std::endl;
+          std::cout << "median of weighted av: "
+                    << calculate_median(sus_odd, sus_odd.size()) << std::endl;
+
+          // float thr_odd_sus =
+          //     z_alpha * calculate_median(sus_odd, sus_odd.size());
+          // std::cout << "thr_odd_sus: " << thr_odd_sus << std::endl;
+
+        
+          if (std::abs(calculate_weighted_av_ch(ch, h2hits_amp) -
+                       calculate_median(sus_odd, sus_odd.size())) >
+              calculate_median(sus_odd, sus_odd.size()) * sus_neigh_perc) {
+            // if the median of ADC weighted sum in neighboring channels if
+            // significantly lower
+            broken_channels.push_back(ch);
+            std::cout << "is broken" << std::endl;
+          }
       }
     }
+    }
+    // else{
+    //   continue;
+    // }
+    // }
 
     // Fitting a 9th-order polynomial to the data
     // h_ave_hits->Fit("pol9", "W");
@@ -577,6 +679,7 @@ int analysis_conn_check() {
     h1_med_odd->Write();
     h1_thr_even->Write();
     h1_thr_odd->Write();
+    // py_h2hits_amp->Write();
 
     file1->Close();
 
