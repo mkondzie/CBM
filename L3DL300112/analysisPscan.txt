@@ -1,0 +1,32 @@
+4 groups of channels 
+injecting pulses not all at once but in groups
+
+we read where the pulses ok
+group 0
+channel 0, 4, 8, 12
+
+group 1 
+1, 5, 9, 13
+
+etc...
+
+each group has 32 ch, in total 128 ch
+
+the threshold corresponds to the 1st discriminator threshold
+the digitization threshold (for DAQ)
+
+gain is the slope of a calibrated channel (before calibration there's no gain)
+
+extra noisy channels marked for information
+
+cleaning a bit of scripts, improving
+
+noise level: ID broken channels
+
+ENC Gaussian Fitting p-scan files
+
+connection check and p-scan 
+
+
+tommorrow morning meeting discuss macros
+

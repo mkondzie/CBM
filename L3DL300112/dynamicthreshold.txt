@@ -51,3 +51,43 @@ median of weighted av: 2.10388
 thr_even_sus: 1.15713
 
 
+__________
+ch: 24 sus_even: 1.49147
+median of weighted av: 1.49902
+thr_even_sus: 0.82446
+__________
+ch: 114 sus_even: 1.67738
+median of weighted av: 1.65875
+thr_even_sus: 0.912311
+
+
+large open arrow / open circle mark as suspicious
+
+hist of weighted average of each channel
+
+
+the algorithm appears to be ~98% accurate
+
+it needs to be at least 95% accurate
+
+if we multiply the accuracy for each module 
+
+then the final accuracy is still lower
+
+approximately 90%
+
+that's why we need to improve broken channels recognition
+
+weighted average projection (rotate over x axis to get the stddev)
+(x,y)->y
+
+hist without weights
+X: weigthed average
+Y:channel
+to get stddev
+3 sigma, 5 sigma
+
+mark noisy channels at the end (i.e. channel 128) but they're not broken
+
+
+
