@@ -96,4 +96,20 @@ broken microcable
 
 
 [mk@collider L3DL300112]$ echo M3DL3*/conn_check_files/ | xargs -n 1 cp my_analysis_conn_check.C 
+https://net2.com/how-to-copy-a-file-to-multiple-directories-in-linux/
+
+
+showcasing the z strips and noisy channels
+M3DL3T0001120A2
+
+worst case scenarios vs scan of broken channels:
+ 
+a cluster of broken channels near the threshold 
+the cluster is comparable with the neighborhood
+M3DL3T2001122A2
+
+the threshold is still sensitive to the cluster
+normal channels are marked as broken
+M3DL3T1001121A2
+
 
