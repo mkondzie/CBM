@@ -90,4 +90,10 @@ to get stddev
 mark noisy channels at the end (i.e. channel 128) but they're not broken
 
 
+3 different reasons for broken channels:
+completely no response 0
+broken microcable 
+
+
+[mk@collider L3DL300112]$ echo M3DL3*/conn_check_files/ | xargs -n 1 cp my_analysis_conn_check.C 
 
