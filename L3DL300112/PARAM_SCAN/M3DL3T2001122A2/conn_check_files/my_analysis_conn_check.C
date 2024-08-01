@@ -249,14 +249,14 @@ int my_analysis_conn_check() {
   // counter of broken channels accross all the files
   size_t n_broken_channels = 0;
   // percentage of neighbors' median for the threshold
-  float z_alpha = 0.50;
+  float z_alpha = 0.55;
   // number of channels in the neighborhood for dynamic threshold
-  int n_neigh_ch = 35;
+  int n_neigh_ch = 25;
   // percentage of threshold vicinity for determining suspicious channels
   float sus_perc = 0.30;
   // accepted deviation from the median of weighted average of neighbors for
   // suspicious channels
-  float n_sigmas = 3.5;
+  float n_sigmas = 5.0;
 
   // reading file with list of measurements files.
   Read_file_tests();

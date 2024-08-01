@@ -112,4 +112,6 @@ the threshold is still sensitive to the cluster
 normal channels are marked as broken
 M3DL3T1001121A2
 
+ z_alpha              n_neigh_ch                sus_perc                n_sigmas
+ 0.550000                      25                0.300000                5.000000             
 
