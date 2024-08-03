@@ -218,8 +218,6 @@ Double_t calculate_weighted_av_ch(int ch, TH2F *h2) {
   } else {
     return sum_average_amp;
   }
-  // Double_t weighted_av_ch = sum_average_amp / sum_of_weights_py_h2hits;
-  // return weighted_av_ch;
 }
 
 // Write a vector of channels to the histogram
@@ -329,8 +327,6 @@ int my_analysis_conn_check() {
         "Median of neighbors vs channel; Channel number; Median of neighbors");
 
     int ch_hits[128] = {0};
-    float ave_even = 0.;
-    float ave_odd = 0.;
 
     // Initial iteration to calculate averages. Odd and Even channels separated
     for (int ch = 0; ch < 128; ch++) {
@@ -351,27 +347,27 @@ int my_analysis_conn_check() {
     }
 
     // Fitting the histograms to determine mean value and sigma
-    h1_ave_even->Fit("gaus", "0Q");
-    float first_ave_even = h1_ave_even->GetFunction("gaus")->GetParameter(1);
-    float first_sigma_even = h1_ave_even->GetFunction("gaus")->GetParameter(2);
-    h1_ave_odd->Fit("gaus", "0Q");
-    float first_ave_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(1);
-    float first_sigma_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(2);
+    // h1_ave_even->Fit("gaus", "0Q");
+    // float first_ave_even = h1_ave_even->GetFunction("gaus")->GetParameter(1);
+    // float first_sigma_even = h1_ave_even->GetFunction("gaus")->GetParameter(2);
+    // h1_ave_odd->Fit("gaus", "0Q");
+    // float first_ave_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(1);
+    // float first_sigma_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(2);
 
     // Second iteration to discard broken or noisy channels based on n_sigmas
-    int ch_cnt_even = 0;
-    int ch_cnt_odd = 0;
+    // int ch_cnt_even = 0;
+    // int ch_cnt_odd = 0;
     for (int ch = 0; ch < 128; ch++) {
-      if (ch % 2 == 0 &&
-          abs(ch_hits[ch] - first_ave_even) < n_sigmas * first_sigma_even) {
-        ave_even += ch_hits[ch];
-        ch_cnt_even++;
-      }
-      if (ch % 2 != 0 &&
-          abs(ch_hits[ch] - first_ave_odd) < n_sigmas * first_sigma_odd) {
-        ave_odd += ch_hits[ch];
-        ch_cnt_odd++;
-      }
+      // if (ch % 2 == 0 &&
+      //     abs(ch_hits[ch] - first_ave_even) < n_sigmas * first_sigma_even) {
+      //   ave_even += ch_hits[ch];
+      //   ch_cnt_even++;
+      // }
+      // if (ch % 2 != 0 &&
+      //     abs(ch_hits[ch] - first_ave_odd) < n_sigmas * first_sigma_odd) {
+      //   ave_odd += ch_hits[ch];
+      //   ch_cnt_odd++;
+      // }
       // fill the weighted average hist with the value for current channel
       if (!std::isnan(calculate_weighted_av_ch(ch, h2hits_amp))) {
         h_weighted_av->Fill(ch, calculate_weighted_av_ch(ch, h2hits_amp));
@@ -608,8 +604,8 @@ int my_analysis_conn_check() {
     gStyle->SetOptStat();
     h2hits_amp->Write();
     h_ave_hits->Write();
-    h1_ave_even->Write();
-    h1_ave_odd->Write();
+    // h1_ave_even->Write();
+    // h1_ave_odd->Write();
     h_broken_ch->Write();
 
     h_ave_even->Write();

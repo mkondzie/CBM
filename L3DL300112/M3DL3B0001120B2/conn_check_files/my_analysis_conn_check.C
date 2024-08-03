@@ -249,9 +249,9 @@ int my_analysis_conn_check() {
   // counter of broken channels accross all the files
   size_t n_broken_channels = 0;
   // percentage of neighbors' median for the threshold
-  float z_alpha = 0.50;
+  float z_alpha = 0.275;
   // number of channels in the neighborhood for dynamic threshold
-  int n_neigh_ch = 10;
+  int n_neigh_ch = 3;
   // percentage of threshold vicinity for determining suspicious channels
   float sus_perc = 0.30;
   // accepted deviation from the median of weighted average of neighbors for
@@ -339,8 +339,6 @@ int my_analysis_conn_check() {
         ch_hits[ch] += vcnt[ch][d];
       }
       h_ave_hits->Fill(ch, ch_hits[ch]);
-      // std::cout << "h_ave_hits (ch, ch_hits[ch]) " << ch << " " <<
-      // ch_hits[ch] << '\n';
       if (ch % 2 == 0) {
         h1_ave_even->Fill(ch_hits[ch]);
         h_ave_even->Fill(ch, ch_hits[ch]);
@@ -350,29 +348,8 @@ int my_analysis_conn_check() {
       }
     }
 
-    // Fitting the histograms to determine mean value and sigma
-    h1_ave_even->Fit("gaus", "0Q");
-    float first_ave_even = h1_ave_even->GetFunction("gaus")->GetParameter(1);
-    float first_sigma_even = h1_ave_even->GetFunction("gaus")->GetParameter(2);
-    h1_ave_odd->Fit("gaus", "0Q");
-    float first_ave_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(1);
-    float first_sigma_odd = h1_ave_odd->GetFunction("gaus")->GetParameter(2);
-
-    // Second iteration to discard broken or noisy channels based on n_sigmas
-    int ch_cnt_even = 0;
-    int ch_cnt_odd = 0;
+    // fill the weighted average hist with the value for current channel
     for (int ch = 0; ch < 128; ch++) {
-      if (ch % 2 == 0 &&
-          abs(ch_hits[ch] - first_ave_even) < n_sigmas * first_sigma_even) {
-        ave_even += ch_hits[ch];
-        ch_cnt_even++;
-      }
-      if (ch % 2 != 0 &&
-          abs(ch_hits[ch] - first_ave_odd) < n_sigmas * first_sigma_odd) {
-        ave_odd += ch_hits[ch];
-        ch_cnt_odd++;
-      }
-      // fill the weighted average hist with the value for current channel
       if (!std::isnan(calculate_weighted_av_ch(ch, h2hits_amp))) {
         h_weighted_av->Fill(ch, calculate_weighted_av_ch(ch, h2hits_amp));
         h1_weighted_av_std->Fill(calculate_weighted_av_ch(ch, h2hits_amp));
@@ -385,7 +362,7 @@ int my_analysis_conn_check() {
     // dynamic thresholds for even and odd channels based on the neighborhood
     float thr_even, thr_odd;
 
-    //____Another iteration to discriminate broken channels____
+    // Second iteration to discriminate broken channels
     for (int ch = 0; ch < 128; ch++) {
 
       // erase the neighbors of the previous channel
@@ -442,29 +419,30 @@ int my_analysis_conn_check() {
           }
           //______________________
           //___Last criterium to find broken channels___
-        } else if (std::abs(ch_hits[ch] - thr_even) < thr_even * sus_perc) {
+        } 
+        // else if (std::abs(ch_hits[ch] - thr_even) < thr_even * sus_perc) {
 
-          // if the channel is suspicious based on the vicinity of threshold
-          // criteria separate for each channel
-          // remembering about the ch + 1 to bin shift
-          if (std::abs(h_weighted_av->GetBinContent(ch + 1) -
-                       h_med_weighted_av->GetBinContent(ch + 1)) >
-              n_sigmas * sus_neigh_sigma) {
-            // if the median of ADC weighted sum in neighboring channels is
-            // significantly different than for the suspicious channel
-            suspicious_channels.push_back(ch);
-            broken_channels.push_back(ch);
+        //   // if the channel is suspicious based on the vicinity of threshold
+        //   // criteria separate for each channel
+        //   // remembering about the ch + 1 to bin shift
+        //   if (std::abs(h_weighted_av->GetBinContent(ch + 1) -
+        //                h_med_weighted_av->GetBinContent(ch + 1)) >
+        //       n_sigmas * sus_neigh_sigma) {
+        //     // if the median of ADC weighted sum in neighboring channels is
+        //     // significantly different than for the suspicious channel
+        //     suspicious_channels.push_back(ch);
+        //     broken_channels.push_back(ch);
 
-            if (h_ave_hits->GetBinContent(ch + 1) == 0) {
-              //          // No analog response (NAR): broken channel
-              std::cout << "broken sus NAR channel " << ch << '\n';
-            } else {
-              std::cout << "broken sus channel " << ch << '\n';
-            }
-          } else {
-            suspicious_channels.push_back(ch);
-          }
-        }
+        //     if (h_ave_hits->GetBinContent(ch + 1) == 0) {
+        //       //          // No analog response (NAR): broken channel
+        //       std::cout << "broken sus NAR channel " << ch << '\n';
+        //     } else {
+        //       std::cout << "broken sus channel " << ch << '\n';
+        //     }
+        //   } else {
+        //     suspicious_channels.push_back(ch);
+        //   }
+        // }
 
       }
 
@@ -506,29 +484,30 @@ int my_analysis_conn_check() {
             std::cout << "broken dynamic threshold channel " << ch << '\n';
           }
 
-        } else if (std::abs(ch_hits[ch] - thr_odd) < thr_odd * sus_perc) {
+        } 
+        // else if (std::abs(ch_hits[ch] - thr_odd) < thr_odd * sus_perc) {
 
-          // if the channel is suspicious based on the vicinity of threshold
-          // criteria separate for each channel
-          //___Last criterium to find broken channels___
-          // remembering about the ch + 1 to bin shift
-          if (std::abs(h_weighted_av->GetBinContent(ch + 1) -
-                       h_med_weighted_av->GetBinContent(ch + 1)) >
-              n_sigmas * sus_neigh_sigma) {
-            // if the median of ADC weighted sum in neighboring channels if
-            // significantly different
-            suspicious_channels.push_back(ch);
-            broken_channels.push_back(ch);
-            if (h_ave_hits->GetBinContent(ch + 1) == 0) {
-             // No analog response (NAR): broken channel
-              std::cout << "broken sus NAR channel " << ch << '\n';
-            } else {
-              std::cout << "broken sus channel " << ch << '\n';
-            }
-          } else {
-            suspicious_channels.push_back(ch);
-          }
-        }
+        //   // if the channel is suspicious based on the vicinity of threshold
+        //   // criteria separate for each channel
+        //   //___Last criterium to find broken channels___
+        //   // remembering about the ch + 1 to bin shift
+        //   if (std::abs(h_weighted_av->GetBinContent(ch + 1) -
+        //                h_med_weighted_av->GetBinContent(ch + 1)) >
+        //       n_sigmas * sus_neigh_sigma) {
+        //     // if the median of ADC weighted sum in neighboring channels if
+        //     // significantly different
+        //     suspicious_channels.push_back(ch);
+        //     broken_channels.push_back(ch);
+        //     if (h_ave_hits->GetBinContent(ch + 1) == 0) {
+        //      // No analog response (NAR): broken channel
+        //       std::cout << "broken sus NAR channel " << ch << '\n';
+        //     } else {
+        //       std::cout << "broken sus channel " << ch << '\n';
+        //     }
+        //   } else {
+        //     suspicious_channels.push_back(ch);
+        //   }
+        // }
       }
     }
 
