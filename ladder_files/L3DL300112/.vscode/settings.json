@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "analysis_conn_check.C": "cpp",
+        "my_analysis_conn_check.C": "cpp",
+        "conn_check_parameters_scan.C": "cpp",
+        "conn_check_parameters_plot.C": "cpp"
+    }
+}

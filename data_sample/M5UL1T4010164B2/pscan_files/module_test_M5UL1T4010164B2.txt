@@ -1,0 +1,36 @@
+LAB_ID:	GSI
+DATE:	Thu Aug  1 10:21:55 2024
+
+OPERATOR_ID:   AdrianRR
+MODULE_ID:     M5UL1T4010164B2
+SENSOR_SIZE:   12.4 cm
+MIC_LENGTH:    49 cm
+ESTIMATED CAP: 31.268 pF
+No._DB_METAL_CHANNELS: 274
+No._FUNCTIONAL_ASICs_N-side: 8
+ACTIVE_ASICs_N-side: 1 1 1 1 1 1 1 1 
+No._FUNCTIONAL_ASICs_P-side: 8
+ACTIVE_ASICs_P-side: 1 1 1 1 1 1 1 1 
+------------------------- ADC ---------------------------
+AVERAGE_ADC_ENC_N-side:	989 +/- 46 e
+AVERAGE_ADC_ENC_P-side:	1079 +/- 88 e
+AVERAGE_ADC_ENC_Z-strips:	1530 +/- 93 e
+AVERAGE_ADC_THR_N-side:	10669 +/- 182 e
+AVERAGE_ADC_THR_P-side:	10656 +/- 232 e
+AVERAGE_ADC_GAIN_N-side:	2455 +/- 18 e/LSB
+AVERAGE_ADC_GAIN_P-side:	2448 +/- 25 e/LSB
+------------------------ FAST ---------------------------
+AVERAGE_FAST_ENC_N-side:	11 +/- 18 e
+AVERAGE_FAST_ENC_P-side:	-2199 +/- 57 e
+AVERAGE_FAST_THR_N-side:	10543 +/- 275 e
+AVERAGE_FAST_THR_P-side:	13388 +/- 1752 e
+------------------- BROKEN CHANNELS -----------------------
+No._BROKEN_CHANNELS_N-side: 9
+LIST_BROKEN_CHANNELS_N-side: 382 (SENS), 384 (SENS), 386 (SENS), 388 (SENS), 392 (SENS), 394 (SENS), 397 (SENS), 399 (SENS), 401 (SENS), 
+No._BROKEN_CHANNELS_P-side: 0
+LIST_BROKEN_CHANNELS_P-side: 
+No._BROKEN_CHANNELS_ODD/EVEN: 3	6
+
+NAR:  Broken channel. No analog response 
+ASIC: Broken bond between ASIC and microcable
+SENS: Sensor strip is not connected

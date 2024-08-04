@@ -1,0 +1,36 @@
+LAB_ID:	GSI
+DATE:	Thu Aug  1 11:17:07 2024
+
+OPERATOR_ID:   AdrianRR
+MODULE_ID:     M4DL2T4001164A2
+SENSOR_SIZE:   12.4 cm
+MIC_LENGTH:    49 cm
+ESTIMATED CAP: 31.268 pF
+No._DB_METAL_CHANNELS: 274
+No._FUNCTIONAL_ASICs_N-side: 8
+ACTIVE_ASICs_N-side: 1 1 1 1 1 1 1 1 
+No._FUNCTIONAL_ASICs_P-side: 8
+ACTIVE_ASICs_P-side: 1 1 1 1 1 1 1 1 
+------------------------- ADC ---------------------------
+AVERAGE_ADC_ENC_N-side:	1026 +/- 43 e
+AVERAGE_ADC_ENC_P-side:	1050 +/- 86 e
+AVERAGE_ADC_ENC_Z-strips:	1537 +/- 63 e
+AVERAGE_ADC_THR_N-side:	10633 +/- 199 e
+AVERAGE_ADC_THR_P-side:	10620 +/- 241 e
+AVERAGE_ADC_GAIN_N-side:	2456 +/- 19 e/LSB
+AVERAGE_ADC_GAIN_P-side:	2457 +/- 24 e/LSB
+------------------------ FAST ---------------------------
+AVERAGE_FAST_ENC_N-side:	1075 +/- 185 e
+AVERAGE_FAST_ENC_P-side:	-12782 +/- 2501 e
+AVERAGE_FAST_THR_N-side:	10372 +/- 342 e
+AVERAGE_FAST_THR_P-side:	11448 +/- 603 e
+------------------- BROKEN CHANNELS -----------------------
+No._BROKEN_CHANNELS_N-side: 16
+LIST_BROKEN_CHANNELS_N-side: 149 (SENS), 269 (SENS), 406 (SENS), 422 (SENS), 458 (SENS), 464 (SENS), 467 (SENS), 468 (SENS), 480 (SENS), 482 (SENS), 494 (SENS), 498 (SENS), 500 (SENS), 502 (SENS), 506 (SENS), 508 (SENS), 
+No._BROKEN_CHANNELS_P-side: 1
+LIST_BROKEN_CHANNELS_P-side: 258 (SENS), 
+No._BROKEN_CHANNELS_ODD/EVEN: 3	14
+
+NAR:  Broken channel. No analog response 
+ASIC: Broken bond between ASIC and microcable
+SENS: Sensor strip is not connected

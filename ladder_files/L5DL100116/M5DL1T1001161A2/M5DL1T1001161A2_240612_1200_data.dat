@@ -1,0 +1,1175 @@
+FILENAME_DATA: M5DL1T1001161A2_240612_1200
+TEST_DATE: 240612-12:00:57
+TEST_CENTER: GSI
+OPERATOR_ID: Dairon Rodriguez Garces
+MODULE ID: 	M5DL1T1001161A2
+SENSOR_SIZE [mm]: 	42
+SENSOR_QGRADE: 	A
+FEB_SN_N:	 2129B2
+FEB_SN_P:	 1132A2
+I_SENSOR_150V_N: 1.9 [uA]
+I_SENSOR_150V_P: 1.9 [uA]
+EMU_BOARD_SN: EMU_213
+
+No_SYNC_N:	 8
+No_SYNC_P:	 8
+DWN_LINK_N: 0
+DWN_LINK_P: 3
+
+LV_BEF_CONFIG_N
+FEB N-side:	2129B2	LV_1.2_BC_N [V]:	3.002930	I_1.2_BC_N [A]:	1.068120
+FEB N-side:	2129B2	LV_1.8_BC_N [V]:	3.001950	I_1.8_BC_N [A]:	1.998290
+LV_BEF_CONFIG_P
+FEB P-side:	1132A2	LV_1.2_BC_P [V]:	3.000980	I_1.2_BC_P [A]:	1.246580
+FEB P-side:	1132A2	LV_1.8_BC_P [V]:	3.005860	I_1.8_BC_P [A]:	2.025880
+
+EFUSE_ID_N
+FEB-ID_		_POLARITY_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+2129B2 		 N-side 		 1 		 XA-000-08-002-000-006-107-00 		 6359364699116562096
+2129B2 		 N-side 		 0 		 XA-000-08-002-000-006-208-03 		 6359364699116563715
+2129B2 		 N-side 		 3 		 XA-000-08-002-000-006-111-00 		 6359364699116562160
+2129B2 		 N-side 		 2 		 XA-000-08-002-000-006-202-04 		 6359364699116563620
+2129B2 		 N-side 		 5 		 XA-000-08-002-000-006-075-14 		 6359364699116561598
+2129B2 		 N-side 		 4 		 XA-000-08-002-000-006-203-04 		 6359364699116563636
+2129B2 		 N-side 		 7 		 XA-000-08-002-000-006-209-03 		 6359364699116563731
+2129B2 		 N-side 		 6 		 XA-000-08-002-000-006-206-04 		 6359364699116563684
+
+EFUSE_ID_P
+FEB-ID_		_POLARITY_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+1132A2 		 P-side 		 7 		 XA-000-08-002-000-005-154-08 		 6359364699116558760
+1132A2 		 P-side 		 6 		 XA-000-08-002-000-005-151-08 		 6359364699116558712
+1132A2 		 P-side 		 5 		 XA-000-08-002-000-006-110-00 		 6359364699116562144
+1132A2 		 P-side 		 4 		 XA-000-08-002-000-005-152-08 		 6359364699116558728
+1132A2 		 P-side 		 3 		 XA-000-08-002-000-005-157-08 		 6359364699116558808
+1132A2 		 P-side 		 2 		 XA-000-08-002-000-005-153-08 		 6359364699116558744
+1132A2 		 P-side 		 1 		 XA-000-08-002-000-005-150-08 		 6359364699116558696
+1132A2 		 P-side 		 0 		 XA-000-08-002-000-005-166-01 		 6359364699116558945
+
+LV_AFT_CONFIG_N
+FEB N-side:	2129B2	LV_1.2_AC_N [V]:	3.007810	I_1.2_AC_N [A]:	2.576660
+FEB N-side:	2129B2	LV_1.8_AC_N [V]:	3.001950	I_1.8_AC_N [A]:	2.231930
+LV_AFT_CONFIG_P
+FEB P-side:	1132A2	LV_1.2_AC_P [V]:	3.002930	I_1.2_AC_P [A]:	2.552250
+FEB P-side:	1132A2	LV_1.8_AC_P [V]:	3.005860	I_1.8_AC_P [A]:	2.186040
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 171 	 1165.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 690.0 	 38.0
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 185 	 1248.4 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 622.3 	 69.9
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 171 	 1165.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 171 	 1165.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 622.3 	 69.9
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 656.3 	 53.9
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 622.3 	 69.9
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 622.3 	 69.9
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 656.3 	 53.9
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 179 	 1213.2 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 656.3 	 53.9
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 629.1 	 66.7
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 181 	 1225.0 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 171 	 1165.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 172 	 1171.8 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 656.3 	 53.9
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 181 	 1225.0 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 676.5 	 44.4
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 656.3 	 53.9
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 669.8 	 47.5
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 663.0 	 50.7
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2129B2 		 N-side 		 1 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 0 			 173 	 1177.7 			 635.9 	 63.5
+2129B2 		 N-side 		 3 			 170 	 1159.8 			 622.3 	 69.9
+2129B2 		 N-side 		 2 			 174 	 1183.7 			 635.9 	 63.5
+2129B2 		 N-side 		 5 			 180 	 1219.1 			 649.5 	 57.1
+2129B2 		 N-side 		 4 			 172 	 1171.8 			 629.1 	 66.7
+2129B2 		 N-side 		 7 			 176 	 1195.5 			 642.7 	 60.3
+2129B2 		 N-side 		 6 			 182 	 1230.9 			 663.0 	 50.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1132A2 		 P-side 		 7 			 190 	 1277.5 			 683.3 	 41.2
+1132A2 		 P-side 		 6 			 180 	 1219.1 			 656.3 	 53.9
+1132A2 		 P-side 		 5 			 175 	 1189.6 			 635.9 	 63.5
+1132A2 		 P-side 		 4 			 183 	 1236.7 			 663.0 	 50.7
+1132A2 		 P-side 		 3 			 181 	 1225.0 			 656.3 	 53.9
+1132A2 		 P-side 		 2 			 184 	 1242.6 			 669.8 	 47.5
+1132A2 		 P-side 		 1 			 182 	 1230.9 			 656.3 	 53.9
+1132A2 		 P-side 		 0 			 185 	 1248.4 			 683.3 	 41.2

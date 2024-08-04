@@ -1,0 +1,137 @@
+FILENAME_DATA: M5DL1B2001162B2
+TEST_DATE: 240521-15:03:52
+TEST_CENTER: GSI
+OPERATOR_ID: Dairon Rodriguez Garces
+MODULE ID: 	M5DL1B2001162B2
+SENSOR_SIZE [mm]: 	62
+SENSOR_QGRADE: 	A
+FEB_SN_N:	 1118A2
+FEB_SN_P:	 2114B2
+I_SENSOR_150V_N: 2.9 [uA]
+I_SENSOR_150V_P: 2.9 [uA]
+EMU_BOARD_SN: EMU_234
+
+No_SYNC_N:	 8
+No_SYNC_P:	 8
+DWN_LINK_N: 1
+DWN_LINK_P: 2
+
+LV_BEF_CONFIG_N
+FEB N-side:	1118A2	LV_1.2_BC_N [V]:	3.002930	I_1.2_BC_N [A]:	1.019290
+FEB N-side:	1118A2	LV_1.8_BC_N [V]:	3.003910	I_1.8_BC_N [A]:	1.983890
+LV_BEF_CONFIG_P
+FEB P-side:	2114B2	LV_1.2_BC_P [V]:	2.999020	I_1.2_BC_P [A]:	1.003910
+FEB P-side:	2114B2	LV_1.8_BC_P [V]:	3.001950	I_1.8_BC_P [A]:	1.959720
+
+EFUSE_ID_N
+FEB-ID_		_POLARITY_		_INDEX_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+1118A2 		 N-side 		 7 		 XA-000-08-002-001-006-213-11 		 6359364699117612379
+1118A2 		 N-side 		 6 		 XA-000-08-002-001-006-221-11 		 6359364699117612507
+1118A2 		 N-side 		 5 		 XA-000-08-002-001-006-212-11 		 6359364699117612363
+1118A2 		 N-side 		 4 		 XA-000-08-002-001-006-182-00 		 6359364699117611872
+1118A2 		 N-side 		 3 		 XA-000-08-002-001-006-215-11 		 6359364699117612411
+1118A2 		 N-side 		 2 		 XA-000-08-002-001-006-210-11 		 6359364699117612331
+1118A2 		 N-side 		 1 		 XA-000-08-002-001-006-218-11 		 6359364699117612459
+1118A2 		 N-side 		 0 		 XA-000-08-002-001-006-220-11 		 6359364699117612491
+
+EFUSE_ID_P
+FEB-ID_		_POLARITY_		_INDEX_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+2114B2 		 P-side 		 1 		 XA-000-08-002-001-006-217-11 		 6359364699117612443
+2114B2 		 P-side 		 0 		 XA-000-08-002-001-006-216-11 		 6359364699117612427
+2114B2 		 P-side 		 3 		 XA-000-08-002-001-006-214-11 		 6359364699117612395
+2114B2 		 P-side 		 2 		 XA-000-08-002-001-006-181-00 		 6359364699117611856
+2114B2 		 P-side 		 5 		 XA-000-08-002-001-006-209-11 		 6359364699117612315
+2114B2 		 P-side 		 4 		 XA-000-08-002-001-006-211-11 		 6359364699117612347
+2114B2 		 P-side 		 7 		 XA-000-08-002-001-006-208-11 		 6359364699117612299
+2114B2 		 P-side 		 6 		 XA-000-08-002-001-006-219-11 		 6359364699117612475
+
+LV_AFT_CONFIG_N
+FEB N-side:	1118A2	LV_1.2_AC_N [V]:	3.005860	I_1.2_AC_N [A]:	2.492920
+FEB N-side:	1118A2	LV_1.8_AC_N [V]:	3.004880	I_1.8_AC_N [A]:	2.203860
+LV_AFT_CONFIG_P
+FEB P-side:	2114B2	LV_1.2_AC_P [V]:	3.002930	I_1.2_AC_P [A]:	2.446290
+FEB P-side:	2114B2	LV_1.8_AC_P [V]:	3.001950	I_1.8_AC_P [A]:	2.182620
+
+VDDM_TEMP_N
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+1118A2 		 N-side 		 7 			 177 	 1201.4 			 669.8 	 47.5
+1118A2 		 N-side 		 6 			 191 	 1283.2 			 716.8 	 25.4
+1118A2 		 N-side 		 5 			 173 	 1177.7 			 656.3 	 53.9
+1118A2 		 N-side 		 4 			 176 	 1201.4 			 669.8 	 47.5
+1118A2 		 N-side 		 3 			 178 	 1207.4 			 676.5 	 44.4
+1118A2 		 N-side 		 2 			 183 	 1236.7 			 683.3 	 38.0
+1118A2 		 N-side 		 1 			 179 	 1213.2 			 683.3 	 41.2
+1118A2 		 N-side 		 0 			 186 	 1254.3 			 703.4 	 31.7
+
+VDDM_TEMP_P
+FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+2114B2 		 P-side 		 1 			 179 	 1213.2 			 683.3 	 41.2
+2114B2 		 P-side 		 0 			 177 	 1201.4 			 676.5 	 44.4
+2114B2 		 P-side 		 3 			 177 	 1195.5 			 669.8 	 47.5
+2114B2 		 P-side 		 2 			 173 	 1177.7 			 663.0 	 50.7
+2114B2 		 P-side 		 5 			 184 	 1242.6 			 696.7 	 34.9
+2114B2 		 P-side 		 4 			 185 	 1248.4 			 703.4 	 31.7
+2114B2 		 P-side 		 7 			 181 	 1225.0 			 683.3 	 41.2
+2114B2 		 P-side 		 6 			 179 	 1213.2 			 669.8 	 47.5
+
+CAL_SETTINGS_N
+INDEX:		HW_ADDR: 	 VRef_P: 	 VRef_N: 	 VRef_T: 	 VRef_T_range 	 Thr2_glb:
+0                 7               58              23              118             1               36
+1                 6               56              26              118             1               32
+2                 5               56              25              118             1               30
+3                 4               56              22              118             1               37
+4                 3               56              21              118             1               38
+5                 2               57              25              118             1               36
+6                 1               56              26              118             1               37
+7                 0               56              26              118             1               38
+
+CAL_SETTINGS_P
+INDEX:		HW_ADDR: 	 VRef_P: 	 VRef_N: 	 VRef_T: 	 VRef_T_range 	 Thr2_glb:
+0                 1               56              20              118             1               10
+1                 0               55              17              118             1               37
+2                 3               56              20              118             1               48
+3                 2               57              18              118             1               37
+4                 5               56              18              118             1               36
+5                 4               56              21              118             1               53
+6                 7               57              21              118             1               39
+7                 6               56              21              118             1               63
+
+TRIM_FILE_N
+CAL_ASIC_HW_ADDR_7: ftrim_XA-000-08-002-001-006-213-11_HW_7_SET_58_23_118_36_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_6: ftrim_XA-000-08-002-001-006-221-11_HW_6_SET_56_26_118_32_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_5: ftrim_XA-000-08-002-001-006-212-11_HW_5_SET_56_25_118_30_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_4: ftrim_XA-000-08-002-001-006-182-00_HW_4_SET_56_22_118_37_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_3: ftrim_XA-000-08-002-001-006-215-11_HW_3_SET_56_21_118_38_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_2: ftrim_XA-000-08-002-001-006-210-11_HW_2_SET_57_25_118_36_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_1: ftrim_XA-000-08-002-001-006-218-11_HW_1_SET_56_26_118_37_R_30_247_elect.txt
+CAL_ASIC_HW_ADDR_0: ftrim_XA-000-08-002-001-006-220-11_HW_0_SET_56_26_118_38_R_30_247_elect.txt
+
+TRIM_FILE_P
+CAL_ASIC_HW_ADDR_1: ftrim_XA-000-08-002-001-006-217-11_HW_1_SET_56_20_118_10_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_0: ftrim_XA-000-08-002-001-006-216-11_HW_0_SET_55_17_118_37_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_3: ftrim_XA-000-08-002-001-006-214-11_HW_3_SET_56_20_118_48_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_2: ftrim_XA-000-08-002-001-006-181-00_HW_2_SET_57_18_118_37_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_5: ftrim_XA-000-08-002-001-006-209-11_HW_5_SET_56_18_118_36_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_4: ftrim_XA-000-08-002-001-006-211-11_HW_4_SET_56_21_118_53_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_7: ftrim_XA-000-08-002-001-006-208-11_HW_7_SET_57_21_118_39_R_30_247_holes.txt
+CAL_ASIC_HW_ADDR_6: ftrim_XA-000-08-002-001-006-219-11_HW_6_SET_56_21_118_63_R_30_247_holes.txt
+
+PSCAN_FILE_N
+PSCAN_ASIC_HW_ADDR_7: pscan_240521_1740_XA-000-08-002-001-006-213-11_HW_7_SET_58_23_118_36_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_6: pscan_240521_1747_XA-000-08-002-001-006-221-11_HW_6_SET_56_26_118_32_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_5: pscan_240521_1755_XA-000-08-002-001-006-212-11_HW_5_SET_56_25_118_30_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_4: pscan_240521_1802_XA-000-08-002-001-006-182-00_HW_4_SET_56_22_118_37_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_3: pscan_240521_1809_XA-000-08-002-001-006-215-11_HW_3_SET_56_21_118_38_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_2: pscan_240521_1816_XA-000-08-002-001-006-210-11_HW_2_SET_57_25_118_36_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_1: pscan_240521_1824_XA-000-08-002-001-006-218-11_HW_1_SET_56_26_118_37_VP_0_255_1_NP_100_elect.txt
+PSCAN_ASIC_HW_ADDR_0: pscan_240521_1831_XA-000-08-002-001-006-220-11_HW_0_SET_56_26_118_38_VP_0_255_1_NP_100_elect.txt
+
+PSCAN_FILE_P
+PSCAN_ASIC_HW_ADDR_1: pscan_240521_1838_XA-000-08-002-001-006-217-11_HW_1_SET_56_20_118_10_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_0: pscan_240521_1845_XA-000-08-002-001-006-216-11_HW_0_SET_55_17_118_37_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_3: pscan_240521_1853_XA-000-08-002-001-006-214-11_HW_3_SET_56_20_118_48_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_2: pscan_240521_1900_XA-000-08-002-001-006-181-00_HW_2_SET_57_18_118_37_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_5: pscan_240521_1907_XA-000-08-002-001-006-209-11_HW_5_SET_56_18_118_36_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_4: pscan_240521_1914_XA-000-08-002-001-006-211-11_HW_4_SET_56_21_118_53_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_7: pscan_240521_1921_XA-000-08-002-001-006-208-11_HW_7_SET_57_21_118_39_VP_0_255_1_NP_100_holes.txt
+PSCAN_ASIC_HW_ADDR_6: pscan_240521_1929_XA-000-08-002-001-006-219-11_HW_6_SET_56_21_118_63_VP_0_255_1_NP_100_holes.txt

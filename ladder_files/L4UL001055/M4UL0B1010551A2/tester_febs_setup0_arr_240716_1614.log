@@ -1,0 +1,92 @@
+[INFO] ----------------------- SKIPPING TEST: #power_on_emu -------------------------- 
+[INFO]  ------------------- RUNNING SYNCHRONIZATION ---------------------- 
+[INFO] Setting Elink clock mode to 160 MHz
+[INFO] Scanning setup
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [0]
+[INFO] SOS detected for group 0, downlink 0, uplink 12
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] SOS detected for group 0, downlink 1, uplink 0
+[INFO] SOS detected for group 0, downlink 1, uplink 1
+[INFO] SOS detected for group 0, downlink 1, uplink 2
+[INFO] SOS detected for group 0, downlink 1, uplink 3
+[INFO] SOS detected for group 0, downlink 1, uplink 4
+[INFO] SOS detected for group 0, downlink 1, uplink 5
+[INFO] SOS detected for group 0, downlink 1, uplink 6
+[INFO] SOS detected for group 0, downlink 1, uplink 7
+[INFO] SOS detected for group 0, downlink 1, uplink 9
+[INFO] SOS detected for group 0, downlink 1, uplink 10
+[INFO] SOS detected for group 0, downlink 1, uplink 11
+[INFO] SOS detected for group 0, downlink 1, uplink 12
+[INFO] SOS detected for group 0, downlink 1, uplink 13
+[INFO] SOS detected for group 0, downlink 1, uplink 14
+[INFO] SOS detected for group 0, downlink 1, uplink 15
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] SOS detected for group 0, downlink 2, uplink 16
+[INFO] SOS detected for group 0, downlink 2, uplink 17
+[INFO] SOS detected for group 0, downlink 2, uplink 18
+[INFO] SOS detected for group 0, downlink 2, uplink 19
+[INFO] SOS detected for group 0, downlink 2, uplink 20
+[INFO] SOS detected for group 0, downlink 2, uplink 21
+[INFO] SOS detected for group 0, downlink 2, uplink 22
+[INFO] SOS detected for group 0, downlink 2, uplink 23
+[INFO] SOS detected for group 0, downlink 2, uplink 24
+[INFO] SOS detected for group 0, downlink 2, uplink 25
+[INFO] SOS detected for group 0, downlink 2, uplink 26
+[INFO] SOS detected for group 0, downlink 2, uplink 27
+[INFO] SOS detected for group 0, downlink 2, uplink 28
+[INFO] SOS detected for group 0, downlink 2, uplink 29
+[INFO] SOS detected for group 0, downlink 2, uplink 30
+[INFO] SOS detected for group 0, downlink 2, uplink 31
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [3]
+[INFO] SOS detected for group 0, downlink 3, uplink 21
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [4]
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] setup_elements_tmp: 4
+[INFO] SE:	0		[12]  (1)
+[INFO] SE:	1		[0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]  (15)
+[INFO] Remove setup element for downlink no. 1 with uplinks [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
+[INFO] SE:	2		[16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]  (16)
+[INFO] Remove setup element for downlink no. 2 with uplinks [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[INFO] SE:	3		[21]  (1)
+[INFO] Cleaned - SE:	0		[12]  (1)
+[INFO] Final List UPLINKS SE:	0		[12]  (1)
+[INFO] Cleaned - SE:	3		[21]  (1)
+[INFO] Final List UPLINKS SE:	3		[21]  (1)
+[INFO] Scanning clock phase
+[INFO] Setting encoding mode SOS for groups [0], downlinks [0]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [0]
+[INFO] Clock phase scan results for group 0, downlink 0
