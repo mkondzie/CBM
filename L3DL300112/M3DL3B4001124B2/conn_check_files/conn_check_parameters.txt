@@ -1,2 +1,0 @@
-             z_alpha	          n_neigh_ch	            sus_perc	            n_sigmas	   n_broken_channels
-            0.500000	                  10	            0.300000	            3.500000	                  16

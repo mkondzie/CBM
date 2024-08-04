@@ -1,0 +1,49 @@
+ssh mkondz@lx-pool.gsi.de
+The authenticity of host 'lx-pool.gsi.de (140.181.60.96)' can't be established.
+ED25519 key fingerprint is SHA256:oCOkz4+YSiHbn1B1cwJ0xi3k0NikUcvp4KS77KEkbYU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'lx-pool.gsi.de' (ED25519) to the list of known hosts.
+mkondz@lx-pool.gsi.de's password: D!6V6iRf!+Nn
+
+
+[mk@collider STS]$ ssh mkondz@lx-pool.gsi.de
+mkondz@lx-pool.gsi.de's password: 
+Linux lxi093 4.19.0-25-amd64 #1 SMP Debian 4.19.289-2 (2023-08-08) x86_64
+
+Welcome to the Linux farm at GSI!
+
+More information is available at https://wiki.gsi.de/Linux
+
+Report issues to <linux-service@gsi.de>, have a good time.
+
+mkondz@lxi093:~$ ls
+web-docs
+
+mkondz@lxi091:~$ passwd
+Current Kerberos password: 
+Enter new Kerberos password: OldieOldbag1228
+Retype new Kerberos password: 
+
+
+chmod +x setup-archlinux.sh 
+
+
+[mk@collider Install]$ ls
+asio   faircmakemodules  flatbuffers  geant4_vmc  pythia8  vmc
+boost  fairlogger        fmt          hepmc       root     zeromq
+clhep  fairmq            geant3       odc         vc
+dds    fairsoft-config   geant4       pythia6     vgm
+[mk@collider Install]$ pwd
+/home/mk/Documents/CBM/scripts/fairsoft_src_apr21p2_root6/build/Install
+	
+
+user name GSI windows network:
+mkondz
+pass:
+Lubi3Pl@cki
+
+GSI outlook: 
+mkondz
+pass:
+Hos3rK@mi3ni@r@2023

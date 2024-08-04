@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "my_analysis_conn_check.C": "cpp",
-        "algorithm": "cpp",
-        "cmath": "cpp"
-    }
-}
