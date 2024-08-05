@@ -1,0 +1,95 @@
+commands to run analysis
+
+[mk@collider data_sample]$ ls
+M4DL2B0001160B2  M4DL2T3001163A2  M4UL0T0010550B2  M4UL6T0110340B2  M5DL1B4001164B2  M5DL3B1001171B2  M5DL3T3001173A2  M6UL0B1010571A2
+M4DL2B2001162B2  M4DL2T4001164A2  M4UL0T1010551B2  M4UL6T1010341B2  M5DL1T0001160A2  M5DL3B2001172B2  M5UL1B3010163A2  M6UL0T2010572B2
+M4DL2B3001163B2  M4UL0B0010550A2  M4UL0T2010552B2  M5DL1B0001160B2  M5DL1T1001161A2  M5DL3B3001173B2  M5UL1T4010164B2  M6UL4B2010362A2
+M4DL2B4001164B2  M4UL0B1010551A2  M4UL0T3010553B2  M5DL1B1001161B2  M5DL1T3001163A2  M5DL3T0001170A2  M6DL4B0001200B2  process_folders.sh
+M4DL2T0001160A2  M4UL0B2010552A2  M4UL6B0010340A2  M5DL1B2001162B2  M5DL1T4001164A2  M5DL3T1001171A2  M6DL4B1001201B2
+M4DL2T2001162A2  M4UL0B3010553A2  M4UL6B1010341A2  M5DL1B3001163B2  M5DL3B0001170B2  M5DL3T2001172A2  M6DL4B2001202B2
+[mk@collider data_sample]$ cd M6UL0B1010571A2/
+[mk@collider M6UL0B1010571A2]$ cd pscan_files/
+[mk@collider pscan_files]$ root -l
+root [0] .tri
+tab completion not implemented for this context
+root [0] .L trim_adc.cxx
+In file included from input_line_8:1:
+/home/mk/Documents/CBM/data_sample/M6UL0B1010571A2/pscan_files/trim_adc.cxx:316:28: warning: 'sizeof (disc_list)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+  d_len = sizeof(disc_list)/sizeof(disc_list[0]);
+          ~~~~~~~~~~~~~~~~~^
+/home/mk/Documents/CBM/data_sample/M6UL0B1010571A2/pscan_files/trim_adc.cxx:314:28: note: pointer 'disc_list' declared here
+bool trim_adc::Init_d(int *disc_list, int d_size){
+                           ^
+root [1] .ex
+tab completion not implemented for this context
+root [1] .exec
+tab completion not implemented for this context
+root [1] .execut
+tab completion not implemented for this context
+root [1] .L execution.C 
+root [2] ex
+execution
+exit
+exp
+exp2
+expm1
+root [2] execution()
+......................oooo00000oooo...............................
+^C
+ *** Break *** keyboard interrupt
+Root > ^C
+Root > .q
+[mk@collider pscan_files]$ cp ../../../analysis_macros/20240419/execution.C .
+[mk@collider pscan_files]$ root -l
+root [0] .L trim_adc.cxx
+In file included from input_line_8:1:
+/home/mk/Documents/CBM/data_sample/M6UL0B1010571A2/pscan_files/trim_adc.cxx:316:28: warning: 'sizeof (disc_list)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+  d_len = sizeof(disc_list)/sizeof(disc_list[0]);
+          ~~~~~~~~~~~~~~~~~^
+/home/mk/Documents/CBM/data_sample/M6UL0B1010571A2/pscan_files/trim_adc.cxx:314:28: note: pointer 'disc_list' declared here
+bool trim_adc::Init_d(int *disc_list, int d_size){
+                           ^
+root [1] .L execution.C 
+root [2] execution()
+......................oooo00000oooo...............................
+^X^C
+ *** Break *** keyboard interrupt
+ 
+ 
+ 
+ 
+ if the plot_1024.C script doesn't run
+ look at the txt and root files
+ if one of the files looks super noisy
+ remove it from the a.txt plot.txt
+ and the list of all asics inside 
+ plot_1024.C script
+ then run it again
+ 
+ analyze_pscan.sh
+ ./analyze_pscan.sh M6DL4B1001201B2
+ 
+ module_id = $1
+ 
+ cd $module_id/pscan_files/
+ 
+  cp ../../../analysis_macros/20240419/execution.C .
+  
+  cp ../../../analysis_macros/20240419/trim_adc.cxx .
+  
+  cp ../../../analysis_macros/20240419/trim_adc.hxx .
+
+  cp ../../../analysis_macros/20240419/plot_1024.C .
+
+  ls pscan*elect.txt pscan*holes.txt > a.txt
+  
+  root -l 
+  (inside root)
+  .L trim_adc.cxx
+  .L execution.C
+  execution()
+  .q
+  
+  ls pscan*elect.root pscan*holes.root > plot.txt
+  
+  root -l plot_1024.C
