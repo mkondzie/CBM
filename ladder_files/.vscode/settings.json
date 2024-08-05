@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "my_analysis_conn_check.C": "cpp"
+        "my_analysis_conn_check.C": "cpp",
+        "analysis_conn_check.C": "cpp"
     }
 }
